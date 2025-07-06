@@ -1,13 +1,74 @@
 :root {
-  --background-main: #1e232b;
-  --text-primary: white;
+  /* base neutrals */
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* primary usage */
+  --background-main: var(--color-white);
+  --text-heading: var(--color-black);
+  --text-primary: hsl(0, 0%, 10%);
+  --divider: hsl(210, 17%, 92%);
+
+  /* brand colours */
+  --color-primary: hsl(3, 100%, 66%);   /* soft red */
+  --color-accent: hsl(45, 100%, 50%);   /* bright yellow */
 }
 
+/* custom scrollbar */
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(from var(--color-primary) h s 80%);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active { 
+  background: var(--color-primary);
+}
+
+/* BASE STYLES */
 body {
   background-color: var(--background-main);
-  font-family: 'Poppins', sans-serif;
+
+  /* base typography */
+  color: var(--text-primary);
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 300;
+  line-height: 2.5;
 }
 
-p {
-  color: var(--text-primary);
+/* header typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  line-height: 2;
+}
+
+/* BOOTSTRAP UTILS */
+.bg-custom { background-color: var(--color-primary); }
+.text-heading { color: var(--color-primary); }
+.content-width { 
+  max-width: 1000px;
+  margin-left: auto; margin-right: auto;
+  padding-left: 1rem; padding-right: 1rem;
+}
+.topic-heading {
+  /* add decorative elements */
+}
+.subtopic-heading {
+  font-weight: 400;
+}
+.summary-box {
+  padding: 2rem;
+  border: 2px solid hsl(from var(--color-accent) h s 80%);
+  border-radius: 16px;
 }
