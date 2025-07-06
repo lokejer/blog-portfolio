@@ -18,36 +18,41 @@ document.getElementById('searchInput').addEventListener('keypress', function(e) 
   }
 });
 
+/* 
+******* DO NOT DELETE *********
+******* DO NOT DELETE *********
+******* DO NOT DELETE *********
+*/
 // Handle dropdown menu clicks
-document.querySelectorAll('.dropdown-item').forEach(item => {
-  item.addEventListener('click', function(e) {
-    e.preventDefault();
-    const action = this.getAttribute('href').substring(1);
+// document.querySelectorAll('.dropdown-item').forEach(item => {
+//   item.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     const action = this.getAttribute('href').substring(1);
     
-    // Handle different menu actions
-    switch(action) {
-      case 'logout':
-        if (confirm('Are you sure you want to logout?')) {
-          alert('Logging out...');
-        }
-        break;
-      case 'profile':
-        alert('Opening profile page...');
-        break;
-      case 'settings':
-        alert('Opening settings...');
-        break;
-      case 'dashboard':
-        alert('Opening dashboard...');
-        break;
-      case 'help':
-        alert('Opening help & support...');
-        break;
-      case 'notifications':
-        alert('Opening notifications...');
-        break;
-      default:
-        alert(`Navigating to ${action}...`);
-    }
-  });
-});
+//     // Handle different menu actions
+//     switch(action) {
+//       case 'logout':
+//         if (confirm('Are you sure you want to logout?')) {
+//           alert('Logging out...');
+//         }
+//         break;
+//       case 'profile':
+//         alert('Opening profile page...');
+//         break;
+//       case 'settings':
+//         alert('Opening settings...');
+//         break;
+//       case 'dashboard':
+//         alert('Opening dashboard...');
+//         break;
+//       case 'help':
+//         alert('Opening help & support...');
+//         break;
+//       case 'notifications':
+//         alert('Opening notifications...');
+//         break;
+//       default:
+//         alert(`Navigating to ${action}...`);
+//     }
+//   });
+// });

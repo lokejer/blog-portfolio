@@ -1,0 +1,13 @@
+add dynamic side navigation for subtopic headers (quick navigation)
+
+About page - 
+who i am (year 1 DAAA student), 
+my achievements (all 'A's in MST, polyfintech and sp entrepeneurship hackathon), my side projects, 
+why they should heed my advice
+
+Explore page - 
+dashboard
+
+sign in / sign out system for consulting an AI chatbot that can answer prospective students' queries
+free of charge
+option to speak directly to me on the About page (alternative if they are willing to wait for a response VS js asking the chatbot directly)

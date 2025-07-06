@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link bootstrap / bs icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/library.css">
+ 
+  <!-- DM Sans font (headings) -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <!-- Merriweather font (text, subheadings) -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Free CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>made for humans.</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-nav" data-bs-offset="100" data-bs-smooth-scroll="true">
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container-fluid content-width">
+
+      <!-- brand -->
+      <a class="navbar-brand" href="https://linkedin.com/in/jerome-loke" target="_blank">jero00o</a>
+      
+      <!-- mobile toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- navbar content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+        </ul>
+        
+        <div class="d-flex align-items-center gap-3">
+          <div class="search-container">
+            <input type="text" class="form-control search-input" placeholder="Search..." id="searchInput">
+            <button class="search-btn" type="button" onclick="performSearch()">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+          
+          <div class="dropdown">
+            <div class="user-avatar" data-bs-toggle="dropdown" aria-expanded="false" role="button" tabindex="0">
+              JL
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#profile"><i class="bi bi-person me-2"></i>Profile</a></li>
+              <li><a class="dropdown-item" href="library.html"><i class="bi bi-layers me-2"></i>Components</a></li>
+              <li><a class="dropdown-item" href="#dashboard"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#help"><i class="bi bi-question-circle me-2"></i>Help & Support</a></li>
+              <li><a class="dropdown-item" href="#notifications"><i class="bi bi-bell me-2"></i>Notifications</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="#logout"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrollspy Progress Bar -->
+  <div class="scrollspy-progress">
+    <div class="scrollspy-progress-bar"></div>
+  </div>
+
+  <!-- Section Navigation -->
+  <nav class="section-nav" id="section-nav">
+    <ul>
+      <li><a href="#placeholder-sc" data-title="Placeholder"></a></li>
+      <li><a href="#badges-sc" data-title="Badges"></a></li>
+      <li><a href="#carousel-sc" data-title="Carousel"></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <!-- PLACEHOLDER SHOWCASE -->
+    <section id="placeholder-sc" class="border">
+      <h1 class="mb-5 display-4 fw-bold text-center text-heading"><i class="bi bi-layers me-2"></i> Bootstrap Components</h1>
+      
+      <!-- TITLE -->
+      <h2 class="display-5 text-center">Placeholder</h2>
+  
+      <div class="d-flex flex-wrap justify-content-center gap-5 card-container">
+
+        <div class="card" style="width: 350px;">
+
+          <div class="text-center">
+            <img src="assets/bruno-concert.jpeg" class="m-2 rounded card-img-top" style="width: 90%; height: 200px;">
+          </div>
+        
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          
+        </div>
+        
+        <div class="card" style="width: 350px;">
+          
+          <div class="text-center">
+            <div class="m-2 rounded placeholder" style="width: 90%; height: 200px;"></div>
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title placeholder-glow">
+              <span class="placeholder col-6 bg-success"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+              <span class="placeholder col-7 bg-primary"></span>
+              <span class="placeholder col-4 bg-secondary"></span>
+              <span class="placeholder col-4 bg-danger"></span>
+              <span class="placeholder col-6 bg-info"></span>
+              <span class="placeholder col-8 bg-warning"></span>
+            </p>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BADGE SHOWCASE -->
+    <section id="badges-sc" class="border">
+
+      <!-- TITLE -->
+      <h2 class="display-5 text-center">Badge</h2>
+
+      <!-- taken from neat-login-page's catalog.html -->
+      <div class="d-flex justify-content-center card-container">
+
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/skiing-candid.jpeg" class="card-img-top" alt="Product 1's cover image">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <h5 class="mb-0">Basic (3 days)</h5>
+                  <span class="ms-1 badge badge-product-card">-50%</span>
+                </div>
+                <div class="star-rating" style="color: var(--color-accent);">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+              <p class="text-secondary mb-2">Instructor Khambhati</p>
+              <p class="mb-4"><s>$300</s> $149.80</p>
+              <button class="btn btn-danger mt-1">Purchase</button>
+              <button class="btn btn-outline-dark mt-1">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CAROUSEL SHOWCASE -->
+    <section id="carousel-sc" class="d-flex flex-column justify-content-center align-items-center border">
+
+      <!-- TITLE -->
+      <h2 class="display-5 text-center">Image Carousel</h2>
+  
+      <div class="container d-flex flex-column align-items-center">
+
+        <!-- main image with arrows wrapper -->
+        <div class="position-relative d-flex align-items-center justify-content-center mb-3" style="max-width: 700px; width: 100%;">
+          
+          <!-- left arrow -->
+          <button id="prevBtn" class="btn btn-link position-absolute start-0" style="color: var(--color-white); z-index: 10;">
+            <i class="fa-solid fa-chevron-left fa-2x"></i>
+          </button>
+          
+          <!-- mainImage -->
+          <div class="border rounded mainImage-border">
+            <img
+              id="mainImage"
+              src=""
+              class="img-fluid rounded"
+              alt="Carousel Image">
+          </div>
+            
+          <!-- right arrow -->
+          <button id="nextBtn" class="btn btn-link position-absolute end-0" style="color: var(--color-white); z-index: 10;">
+            <i class="fa-solid fa-chevron-right fa-2x"></i>
+          </button>
+      
+        </div>
+
+        <!-- radio buttons showing selected img / # of imgs -->
+        <div class="radio-input m-4">
+          <label class="label">
+            <input type="radio" name="radio" checked />
+            <span class="check"></span>
+          </label>
+          <label class="label">
+            <input type="radio" name="radio" />
+            <span class="check"></span>
+          </label>
+          <label class="label">
+            <input type="radio" name="radio" />
+            <span class="check"></span>
+          </label>
+        </div>
+
+      </div>      
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/library.js"></script>
+</body>
+</html>
